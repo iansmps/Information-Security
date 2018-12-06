@@ -1,6 +1,6 @@
 import sys 
 import time
-
+ 
 def binomial(n, k):
     """
     A fast way to calculate binomial coefficients by Andrew Dalke.
@@ -18,7 +18,7 @@ def binomial(n, k):
         return 0
 
 def primetest(n):
-    head = n//2
+    head = n//23
     print(head)
     while(head!=1):
         a = binomial(n,head)
