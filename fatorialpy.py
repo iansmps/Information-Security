@@ -18,7 +18,7 @@ def binomial(n, k):
         return 0
 
 def primetest(n):
-    head = n//23
+    head = n//2
     print(head)
     while(head!=1):
         a = binomial(n,head)
