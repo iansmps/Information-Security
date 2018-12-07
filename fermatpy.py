@@ -12,7 +12,7 @@ def ePrimo(p):
     print(x)
     aux = x
     for i in range (p-1):
-        aux = aux * x
+        aux = aux * x                          #ELEVADO
         if aux >= p and i != p-2:
             aux = aux%p
     aux = aux - x
@@ -33,14 +33,14 @@ a = int(input())
 zero = 0
 um = 0
 start_time = time.time()
-for i in range (1):
-    b = ePrimo(a)
-    if b == 0:
-        zero+=1
-    else:
-        um+=1
+#for i in range (1):
+b = ePrimo(a)
+ #   if b == 0:
+  #      zero+=1
+   # else:
+    #    um+=1
 print("--- %s seconds ---" % (time.time() - start_time))
-if zero > um:
+if b==0:
     print("PRIMO")
 else:
     print("COMPOSTO")
