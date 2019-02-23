@@ -10,7 +10,7 @@ def pot(p):
         b = b*2
         a = a * a
         listpot.append(a)
-    #print(listpot)
+    print(len(listpot))
     print("1--- %s seconds ---" % (time.time() - start_time))
     start_time = time.time()
     primo = p
